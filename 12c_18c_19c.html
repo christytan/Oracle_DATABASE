@@ -1,2 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-show something....
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>12c, 18c, and 19c comparison</h2>
+<h3><a href='https://oracle-base.com/articles/12c/multitenant-overview-container-database-cdb-12cr1'>reference page</a></h3>
+<table>
+  <tr>
+    <th></th>
+    <th>12c</th>
+    <th>18c</th>
+    <th>19c</th>
+  </tr>
+  <tr>
+    <td>Multitenancy</td>
+    <td>
+    	<ul>
+  			<li>CDB/PDBs</li>
+		</ul> 
+    </td>
+    <td>
+    	<ul>
+  			<li>Refreshable PDB Switchover</li>
+            <li>Enhanced Integration with Data Guard</li>
+            <li>Snapshot Carousel</li>
+            <li>Dynamic Lockdown Profiles</li>
+            <li>CDB Fleet Management</li>
+		</ul>
+    </td>
+    <td>
+    	<ul>
+  			<li><a href='https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/administering-pdb-snapshots.html#GUID-35B03C37-00BA-4945-BF20-9A7C4C541955'>Enhancements to database-managed PDB snapshots</a></li>
+            <li><a href='https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/administering-a-cdb-with-sql-plus.html#GUID-DF42C0D3-8968-4810-9327-9D176337D356'>Workload capture and replay in a PDB</a></li>
+            <li><a href='https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/administering-a-cdb-with-sql-plus.html#GUID-DF42C0D3-8968-4810-9327-9D176337D356'>ADDM analysis for PDBs</a></li>
+            <li><a href='https://www.oracle.com/pls/topic/lookup?ctx=en/database/oracle/oracle-database/19/multi&id=GUID-4FFB5665-B925-4DB6-ACDD-807D6E699365'>Support for multiple PDB shards in the same CDB</a></li>
+            <li><a href='Fine-grained single-instance PDB patching'>Fine-grained single-instance PDB patching</a></li>
+            <li><a href='https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/cloning-a-pdb.html#GUID-13FF2CE2-532C-4816-8E88-7A5A6E16A279'>Cloning a remote PDB using DBCA</a></li>
+            <li><a href='https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/relocating-a-pdb.html#GUID-146006B7-42F1-47EB-B1BA-C3F8E6DD89A8'>Remote PDB relocation</a></li>
+            <li><a href='https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/managing-security-for-a-multitenant-environment.html#GUID-340472CF-AB9E-4889-A117-B47ED0B10A9D'>Cloud object store support for Data Pump Import</a></li>
+            <li><a href='https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/using-oracle-database-vault-with-a-cdb.html#GUID-E04CBDD1-17F0-4942-BF78-21C340A4425F'>Database Vault Operations Control for infrastructure database administrators</a></li>
+		</ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+
+</table>
+
+</body>
+</html>
+
+
